@@ -1,5 +1,5 @@
-class helloWorldApp{
-    public static void main(String[] args){
+class HelloWorldApp {
+    public static void main(String[] args) {
         System.out.println("Kamusta Mundo!");
     }
 }
