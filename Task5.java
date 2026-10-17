@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Task5 {
     public static void main(String[] args) {
@@ -9,14 +9,18 @@ public class Task5 {
         int number2 = scanner.nextInt();
         System.out.print("Enter last number: ");
         int number3 = scanner.nextInt();
-        int arr[] = { number1, number2, number3 };
-        String largest = arr[0] > arr[1] && arr[0] > arr[2] ? "The largest number is: " + arr[0]
-                : (arr[1] > arr[0] && arr[1] > arr[2]) ? "The largest number is: " + arr[1]
-                        : (arr[2] > arr[0]
-                                && arr[2] > arr[1])
-                                        ? "The largest number is: " + arr[2]
-                                        : (arr[0] == arr[1] && arr[0] == arr[2] || arr[1] == arr[0] && arr[1] == arr[2]
-                                                || arr[2] == arr[0] && arr[2] == arr[1])
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(number1);
+        arr.add(number2);
+        arr.add(number3);
+        String largest = arr.get(0) > arr.get(1) && arr.get(0) > arr.get(2) ? "The largest number is: " + arr.get(0)
+                : (arr.get(1) > arr.get(0) && arr.get(1) > arr.get(2)) ? "The largest number is: " + arr.get(1)
+                        : (arr.get(2) > arr.get(0)
+                                && arr.get(2) > arr.get(1))
+                                        ? "The largest number is: " + arr.get(2)
+                                        : (arr.get(0) == arr.get(1) && arr.get(0) == arr.get(2)
+                                                || arr.get(1) == arr.get(0) && arr.get(1) == arr.get(2)
+                                                || arr.get(2) == arr.get(0) && arr.get(2) == arr.get(1))
                                                         ? "All entered numbers are equal."
                                                         : "";
         System.out.println(largest);
