@@ -16,7 +16,8 @@ public class Task5 {
                                 && arr[2] > arr[1])
                                         ? "The largest number is: " + arr[2]
                                         : (arr[0] == arr[1] && arr[0] == arr[2] || arr[1] == arr[0] && arr[1] == arr[2]
-                                                || arr[2] == arr[0] && arr[2] == arr[1]) ? "All numbers are equal."
+                                                || arr[2] == arr[0] && arr[2] == arr[1])
+                                                        ? "All entered numbers are equal."
                                                         : "";
         System.out.println(largest);
     }
