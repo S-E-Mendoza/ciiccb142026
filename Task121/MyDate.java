@@ -1,6 +1,7 @@
 package Task121;
 
 import Task121.DateTask;
+import static Task121.DateTask.leapYears;
 
 public class MyDate {
     public static void main(String[] args) {
@@ -9,5 +10,6 @@ public class MyDate {
         System.out.println(date1.toString());
         System.out.println(date2.toString());
         // display leapyears
+        System.out.println(leapYears(date1.getYear(), date2.getYear()));
     }
 }
