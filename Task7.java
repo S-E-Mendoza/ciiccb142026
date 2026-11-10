@@ -19,6 +19,11 @@ public class Task7 {
         System.out.println("Quotient: " + quotient);
     }
 
+    /**
+     * Uses final static methods to perform basic arithmetic
+     * operations on two integers in the same package.
+     * May opt to use public access modifier to allow access from other packages.
+     */
     final static int Sum(int fNumber, int sNumber) {
         return fNumber + sNumber;
     }
